@@ -1,13 +1,8 @@
 <?php
 
-    $server_name = "localhost";
-    $default_user = "root";
-    $password = "";
+define('DB_SERVER', 'ADD_SERVER');
+define('DB_USERNAME', 'ADD_USERNAME');
+define('DB_PASSWORD', 'ADD_PASSWORD');
+define('DB_DATABASE', 'ADD_DATABASE');
 
-    $db_name = "brain_central";
-
-    $connection = mysqli_connect($server_name, $default_user, $password, $db_name);
-
-    if(!$connection) {
-        echo "Connection Failed";
-    }
+?>

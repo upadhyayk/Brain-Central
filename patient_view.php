@@ -88,7 +88,12 @@ if(isset($_SESSION["id"])) {
               }
             ?>
             </table>
-
+            
+            <div class="links">
+                    <a href="https://www.aans.org/en/Patients/Neurosurgical-Conditions-and-Treatments/Brain-Tumors#:~:text=A%20brain%20tumor%2C%20known%20as,mechanisms%20that%20control%20normal%20cells." target="_blank">Brain Tumors O$
+                    <a href="https://www.hopkinsmedicine.org/health/conditions-and-diseases/brain-tumor/brain-tumor-surgery#:~:text=To%20identify%20the%20exact%20location,Angiogram" target="_blank">Surgery Overview</a>
+                    <a href="https://braintumor.org/news/what-to-expect-before-and-after-brain-surgery/" target="_blank">Pre & Post Op</a>
+            </div>
             <a href="logout.php">Logout</a>
             </body>
     </html>

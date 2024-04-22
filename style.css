@@ -7,6 +7,11 @@ body {
     flex-direction: column;
 }
 
+.links a{
+    display: inline-block;
+    margin-right: 10px;
+}
+
 *{
     font-family: cursive;
     box-sizing: padding-box;

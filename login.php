@@ -51,20 +51,21 @@ echo "console.log('sql: " . json_encode($row_num) . "');"; // Encoding in JSON t
 echo "</script>";
 
 if(mysqli_num_rows($result) === 1) {
-    $row = mysqli_fetch_assoc($result);
-    echo "<script>";
-    echo "console.log('sql: " . json_encode($row[username]) . "');"; // Encoding in JSON to handle special characters
-    echo "</script>";
-    if($row["username"] === $uname && $row["password"] === $password){
-      $_SESSION["name"] = $row["name"];
-      $_SESSION["id"] = $row["doctor_id"];
-      $_SESSION["username"] = $row["username"];
-      mysqli_close($conn);
-      header("Refresh:4; url=patient_view.php");
-    }else {
-      header("Refresh:4; url=index.php?error=Incorrect username or password");
-    }
-  } else {
-    header("Refresh: 4; url=index.php?error=num rows != 1");
+  $row = mysqli_fetch_assoc($result);
+  echo "<script>";
+  echo "console.log('sql: " . json_encode($row[username]) . "');"; // Encoding in JSON to handle special characters
+  echo "</script>";
+  if($row["username"] === $uname && $row["password"] === $password){
+    $_SESSION["name"] = $row["name"];
+    $_SESSION["id"] = $row["id"];
+    $_SESSION["username"] = $row["username"];
+    mysqli_close($conn);
+    header("Refresh:4; url=patient_view.php");
+  }else {
+    header("Refresh:4; url=index.php?error=Incorrect username or password");
   }
-  
+} else {
+  header("Refresh: 4; url=index.php?error=num rows != 1");
+}
+
+//header("Location: doctor_view.php");

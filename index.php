@@ -17,15 +17,6 @@
 
         <button type="submit">Login</button>
     </form>
-    <form action="doctor.php" method="post">
-        <h2>DOCTOR LOGIN</h2>
-        <?php if(isset($_GET['error'])) { ?>
-            <p class="error"> <?php echo $_GET["error"]; ?></p>
-        <?php } ?>
-        <label>Id</label>
-        <input type="password" name="id" placeholder="Id"><br>
-
-        <button type="submit">Login</button>
-    </form>
 </body>
 </html>
+

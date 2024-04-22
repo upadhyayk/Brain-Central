@@ -20,6 +20,11 @@ form {
     border-radius: 20px;
 }
 
+.link {
+    float: left;
+    margin-right: 20px;
+}
+
 h2 {
     text-align: center;
     margin-bottom: 40px;
@@ -55,30 +60,31 @@ button:hover{
 }
 
 .error {
-   background: #F2DEDE;
-   color: #0c0101;
-   padding: 10px;
-   width: 95%;
-   border-radius: 5px;
-   margin: 20px auto;
-}
-
-h1 {
-    text-align: center;
-    color: rgb(134, 3, 3);
-}
-
-a {
-    float: right;
-    background: rgb(183, 225, 233);
-    padding: 10px 15px;
-    color: #fff;
-    border-radius: 10px;
-    margin-right: 10px;
-    border: none;
-    text-decoration: none;
-}
-
-a:hover{
-    opacity: .7;
-}
+    background: #F2DEDE;
+    color: #0c0101;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+    margin: 20px auto;
+ }
+ 
+ h1 {
+     text-align: center;
+     color: rgb(134, 3, 3);
+ }
+ 
+ a {
+     float: right;
+     background: rgb(183, 225, 233);
+     padding: 10px 15px;
+     color: #fff;
+     border-radius: 10px;
+     margin-right: 10px;
+     border: none;
+     text-decoration: none;
+ }
+ 
+ a:hover{
+     opacity: .7;
+ }
+ 

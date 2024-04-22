@@ -13,7 +13,7 @@ if(isset($_SESSION["id"])) {
             <link rel="stylesheet" type="text/css" href="style.css">
         </head>
         <body>
-            <h1>Welcome <? php echo $_SESSION["name"]; ?></h1>
+            <h1>Welcome <?php echo $_SESSION["name"]; ?></h1>
             <h2>Appointments</h2>
             <table border="1" cellpadding="2" cellspacing="2">
             <tr><td>Doctor</td><td>Time</td><td>Type</td><td>Reminder</td></tr>
